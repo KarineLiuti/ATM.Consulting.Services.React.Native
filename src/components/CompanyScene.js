@@ -15,7 +15,7 @@ export default class CompanyScene extends Component {
     return (
       <View style={styles.sceneBox}>
         <StatusBar backgroundColor="#EC7148" />
-        <ToolBar goBack navigator={this.props.navigator} />
+        <ToolBar goBack navigator={this.props.navigator} backgroundColor="#EC7148" />
         <View style={styles.optionSelected}>
           <Image source={companyDetail} />
           <Text style={styles.optionSelectedTitle} source={companyDetail}>Company</Text>

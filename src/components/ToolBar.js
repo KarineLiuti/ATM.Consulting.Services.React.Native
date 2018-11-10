@@ -13,7 +13,7 @@ export default class ToolBar extends Component {
   render() {
     if (this.props.goBack) {
       return (
-        <View style={styles.toolBar}>
+        <View style={[styles.toolBar, { backgroundColor: this.props.backgroundColor }]}>
           <TouchableHighlight onPress={() => { this.props.navigator.pop(); }}>
             <Image 
               style={{ width: 20, height: 20, marginTop: 10, marginLeft: 5 }} 

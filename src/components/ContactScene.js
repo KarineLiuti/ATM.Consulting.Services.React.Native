@@ -15,7 +15,7 @@ export default class ContactScene extends Component {
     return (
       <View style={styles.sceneBox}>
         <StatusBar backgroundColor="#61BD8C" />
-        <ToolBar goBack navigator={this.props.navigator} />
+        <ToolBar goBack navigator={this.props.navigator} backgroundColor="#61BD8C" />
         <View style={styles.optionSelected}>
           <Image source={contactDetail} />
           <Text style={styles.optionSelectedTitle} source={contactDetail}>Contact us</Text>

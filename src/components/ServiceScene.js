@@ -15,7 +15,7 @@ export default class ServiceScene extends Component {
     return (
       <View style={styles.sceneBox}>
         <StatusBar backgroundColor="#19D1C8" />
-        <ToolBar goBack navigator={this.props.navigator} />
+        <ToolBar goBack navigator={this.props.navigator} backgroundColor="#19D1C8" />
         <View style={styles.optionSelected}>
           <Image source={serviceDetail} />
           <Text style={styles.optionSelectedTitle} source={serviceDetail}>Our services</Text>

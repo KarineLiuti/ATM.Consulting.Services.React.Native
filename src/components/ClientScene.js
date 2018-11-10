@@ -17,7 +17,7 @@ export default class ClientScene extends Component {
     return (
       <View style={styles.sceneBox}>
         <StatusBar backgroundColor="#B9C941" />
-        <ToolBar goBack navigator={this.props.navigator} />
+        <ToolBar goBack navigator={this.props.navigator} backgroundColor="#B9C941" />
         <View style={styles.optionSelected}>
           <Image source={clientDetail} />
           <Text style={styles.optionSelectedTitle} source={clientDetail}>Nossos Clientes</Text>
