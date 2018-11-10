@@ -24,11 +24,15 @@ export default class ClientScene extends Component {
         </View>
         <View style={styles.optionSelectedInformation}>
           <Image source={client1} />
-          <Text style={styles.optionText}>Opa gagsyaasg sjus</Text>
+          <Text style={styles.optionText}>
+            The best innovation company inside South America.
+          </Text>
         </View>
         <View style={styles.optionSelectedInformation}>
           <Image source={client2} />
-          <Text style={styles.optionText}>Opa gagsyaasg sjus</Text>
+          <Text style={styles.optionText}>
+            The best forest management company of Brazil.
+          </Text>
         </View>
       </View>
     );
