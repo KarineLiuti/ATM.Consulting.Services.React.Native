@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import {
+  Image,
   StyleSheet,
   View,
   StatusBar,
-  Image
+  TouchableHighlight
 } from 'react-native';
 import ToolBar from './ToolBar';
 
@@ -23,7 +24,9 @@ export default class DefaultScene extends Component {
           <Image source={logo} />
         </View>
         <View style={styles.menuGroup}>
-          <Image style={styles.imageMenu} source={menuCliente} />
+          <TouchableHighlight onPress={() => { this.props.navigator.push({ id: 'client' }); }}>
+            <Image style={styles.imageMenu} source={menuCliente} />
+          </TouchableHighlight>
           <Image style={styles.imageMenu} source={menuContato} />
         </View>
         <View style={styles.menuGroup}>
