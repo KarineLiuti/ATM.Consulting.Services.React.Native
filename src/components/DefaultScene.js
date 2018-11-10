@@ -24,18 +24,34 @@ export default class DefaultScene extends Component {
           <Image source={logo} />
         </View>
         <View style={styles.menuGroup}>
-          <TouchableHighlight onPress={() => { this.props.navigator.push({ id: 'client' }); }}>
+          <TouchableHighlight 
+            onPress={() => { this.props.navigator.push({ id: 'client' }); }}
+            underlayColor={'#B9C941'}
+            activeOpacity={0.7}
+          >
             <Image style={styles.imageMenu} source={menuCliente} />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => { this.props.navigator.push({ id: 'contact' }); }}>
+          <TouchableHighlight 
+            onPress={() => { this.props.navigator.push({ id: 'contact' }); }}
+            underlayColor={'#61BD8C'}
+            activeOpacity={0.7}
+          >
             <Image style={styles.imageMenu} source={menuContato} />
           </TouchableHighlight>
         </View>
         <View style={styles.menuGroup}>
-          <TouchableHighlight onPress={() => { this.props.navigator.push({ id: 'company' }); }}>
+          <TouchableHighlight 
+            onPress={() => { this.props.navigator.push({ id: 'company' }); }}
+            underlayColor={'#EC7148'}
+            activeOpacity={0.7}
+          >
             <Image style={styles.imageMenu} source={menuEmpresa} />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => { this.props.navigator.push({ id: 'service' }); }}>
+          <TouchableHighlight 
+            onPress={() => { this.props.navigator.push({ id: 'service' }); }}
+            underlayColor={'#19D1C8'}
+            activeOpacity={0.7}
+          >
             <Image style={styles.imageMenu} source={menuServico} />
           </TouchableHighlight>
         </View>

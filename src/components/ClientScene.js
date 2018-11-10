@@ -20,7 +20,7 @@ export default class ClientScene extends Component {
         <ToolBar goBack navigator={this.props.navigator} backgroundColor="#B9C941" />
         <View style={styles.optionSelected}>
           <Image source={clientDetail} />
-          <Text style={styles.optionSelectedTitle} source={clientDetail}>Nossos Clientes</Text>
+          <Text style={styles.optionSelectedTitle} source={clientDetail}>Our clients</Text>
         </View>
         <View style={styles.optionSelectedInformation}>
           <Image source={client1} />
