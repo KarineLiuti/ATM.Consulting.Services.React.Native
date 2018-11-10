@@ -27,11 +27,17 @@ export default class DefaultScene extends Component {
           <TouchableHighlight onPress={() => { this.props.navigator.push({ id: 'client' }); }}>
             <Image style={styles.imageMenu} source={menuCliente} />
           </TouchableHighlight>
-          <Image style={styles.imageMenu} source={menuContato} />
+          <TouchableHighlight onPress={() => { this.props.navigator.push({ id: 'contact' }); }}>
+            <Image style={styles.imageMenu} source={menuContato} />
+          </TouchableHighlight>
         </View>
         <View style={styles.menuGroup}>
-          <Image style={styles.imageMenu} source={menuEmpresa} />
-          <Image style={styles.imageMenu} source={menuServico} />
+          <TouchableHighlight onPress={() => { this.props.navigator.push({ id: 'company' }); }}>
+            <Image style={styles.imageMenu} source={menuEmpresa} />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => { this.props.navigator.push({ id: 'service' }); }}>
+            <Image style={styles.imageMenu} source={menuServico} />
+          </TouchableHighlight>
         </View>
       </View>
     );

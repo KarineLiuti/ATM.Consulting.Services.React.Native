@@ -8,27 +8,21 @@ import {
 } from 'react-native';
 import ToolBar from './ToolBar';
 
-const client1 = require('./../imgs/cliente1.png');
-const client2 = require('./../imgs/cliente2.png');
-const clientDetail = require('./../imgs/detalhe_cliente.png');
+const contactDetail = require('./../imgs/detalhe_contato.png');
 
-export default class ClientScene extends Component {
+export default class ContactScene extends Component {
   render() {
     return (
       <View style={styles.sceneBox}>
-        <StatusBar backgroundColor="#B9C941" />
+        <StatusBar backgroundColor="#61BD8C" />
         <ToolBar goBack navigator={this.props.navigator} />
         <View style={styles.optionSelected}>
-          <Image source={clientDetail} />
-          <Text style={styles.optionSelectedTitle} source={clientDetail}>Nossos Clientes</Text>
+          <Image source={contactDetail} />
+          <Text style={styles.optionSelectedTitle} source={contactDetail}>Contact us</Text>
         </View>
         <View style={styles.optionSelectedInformation}>
-          <Image source={client1} />
-          <Text style={styles.optionText}>Opa gagsyaasg sjus</Text>
-        </View>
-        <View style={styles.optionSelectedInformation}>
-          <Image source={client2} />
-          <Text style={styles.optionText}>Opa gagsyaasg sjus</Text>
+          <Text style={styles.optionText}>Phone: +55 (27) 9999-9999</Text>
+          <Text style={styles.optionText}>E-mail: company@company.com</Text>
         </View>
       </View>
     );
@@ -46,7 +40,7 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   optionSelectedTitle: {
-    color: '#B9C941',
+    color: '#61BD8C',
     fontSize: 25,
     justifyContent: 'center',
     marginHorizontal: 10,

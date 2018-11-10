@@ -7,6 +7,9 @@ import {
 import { Navigator } from 'react-native-deprecated-custom-components';
 import ClientScene from './src/components/ClientScene';
 import DefaultScene from './src/components/DefaultScene';
+import CompanyScene from './src/components/CompanyScene';
+import ContactScene from './src/components/ContactScene';
+import ServiceScene from './src/components/ServiceScene';
 
 export default class ATMConsultingServices extends Component {
   render() {
@@ -20,8 +23,16 @@ export default class ATMConsultingServices extends Component {
             return (<DefaultScene navigator={navigator} />);
           }
           if (route.id === 'client') {
-            console.log(navigator);
-            return (<ClientScene />);
+            return (<ClientScene navigator={navigator} />);
+          }
+          if (route.id === 'company') {
+            return (<CompanyScene navigator={navigator} />);
+          }
+          if (route.id === 'contact') {
+            return (<ContactScene navigator={navigator} />);
+          }
+          if (route.id === 'service') {
+            return (<ServiceScene navigator={navigator} />);
           }
         }}
       />
